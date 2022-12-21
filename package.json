@@ -1,0 +1,31 @@
+{
+  "name": "alina",
+  "version": "1.0.0",
+  "description": "Crash - Casino/Gambling Game",
+  "main": "server.py",
+  "scripts": {
+    "dev": "flask run",
+    "build-tail": "npx tailwindcss -i ./tailwind.css -o ./static/css/tailwind.css",
+    "build-sass": "sass ./static/css/star-anim.scss ./static/css/star-anim.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JustinZhang17/alina.git"
+  },
+  "author": "Justin Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustinZhang17/alina/issues"
+  },
+  "homepage": "https://github.com/JustinZhang17/alina#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.2.1",
+    "flask": "^0.2.10",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
