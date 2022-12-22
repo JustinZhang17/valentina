@@ -1,0 +1,12 @@
+#alert-anim{
+    animation-name: fade-alert;
+    animation-duration:7s;
+    animation-play-state: paused;
+}
+
+@keyframes fade-alert {
+    0% { transform: translate(0, 0); opacity: 0; }
+    5% { transform: translate(0, -7rem); opacity: 1; }
+    95% { transform: translate(0, -7rem); opacity: 1; }
+    100% { transform: translate(0, 0); opacity: 0; }
+}
