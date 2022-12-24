@@ -1,1 +1,0 @@
-const displayAlert=(e,n)=>{const t=document.getElementById("alert-anim");t.querySelector("strong").innerHTML=e,t.querySelector("span").innerHTML=n,reTriggerAnimation(t),setAnimState(t,"running")};

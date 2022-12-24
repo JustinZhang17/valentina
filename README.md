@@ -1,7 +1,7 @@
 <div align="center">
-    <img src="static/img/alina-icon.png" alt="Logo" width="100" height="100">
+    <img src="static/img/valentina-icon.png" alt="Logo" width="100" height="100">
 
-  <h2 align="center">Project Alina</h2>
+  <h2 align="center">Project Valentina</h2>
 
   <p align="center">
     Crash - Casino/Gambling Game
@@ -9,6 +9,8 @@
 </div>
 
 ## About The Project
+
+Valentina Tereshkova
 
 ### Built With
 

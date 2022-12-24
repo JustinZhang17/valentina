@@ -1,12 +1,12 @@
 // Elements
-const countdownContainer = document.getElementById("alina-anim-countdown");
-const countdown = document.getElementById("alina-anim-countdown-text");
-const animT = document.getElementById("alina-anim-ship-travel");
-const animS = document.getElementById("alina-anim-ship-shake");
-const animD = document.getElementById("alina-anim-ship-drop");
-const animE = document.getElementById("alina-anim-env");
-const animSt = document.getElementById("alina-anim-env-stars");
-const animL = document.getElementById("alina-anim-launch");
+const countdownContainer = document.getElementById("valentina-anim-countdown");
+const countdown = document.getElementById("valentina-anim-countdown-text");
+const animT = document.getElementById("valentina-anim-ship-travel");
+const animS = document.getElementById("valentina-anim-ship-shake");
+const animD = document.getElementById("valentina-anim-ship-drop");
+const animE = document.getElementById("valentina-anim-env");
+const animSt = document.getElementById("valentina-anim-env-stars");
+const animL = document.getElementById("valentina-anim-launch");
 
 // Ship starting animation
 const startShipAnimation = async () => {

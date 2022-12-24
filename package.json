@@ -1,5 +1,5 @@
 {
-  "name": "alina",
+  "name": "valentina",
   "version": "1.0.0",
   "description": "Crash - Casino/Gambling Game",
   "main": "server.py",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/JustinZhang17/alina.git"
+    "url": "git+ssh://git@github.com/JustinZhang17/valentina.git"
   },
   "author": "Justin Zhang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JustinZhang17/alina/issues"
+    "url": "https://github.com/JustinZhang17/valentina/issues"
   },
-  "homepage": "https://github.com/JustinZhang17/alina#readme",
+  "homepage": "https://github.com/JustinZhang17/valentina#readme",
   "dependencies": {
     "autoprefixer": "^10.4.13",
     "flask": "^0.2.10",
