@@ -1,0 +1,155 @@
+#valentina-launch {
+  -webkit-mask-image: url(../img/valentina-launch-mask.png);
+  mask-image: url(../img/valentina-launch-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  mask-size: 6rem;
+  -webkit-mask-size: 6rem;
+}
+
+#valentina-anim-launch {
+  animation-name: shake;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+#valentina-anim-ship-travel {
+  animation-name: travel;
+  animation-duration: 20s;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+#valentina-anim-ship-shake {
+  animation-name: shake;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+#valentina-anim-env {
+  animation-name: skyColor;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+#valentina-anim-ship-drop {
+  animation-name: shipDrop;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+#valentina-anim-env-stars {
+  animation-name: envStars;
+  animation-duration: 80s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  position: absolute;
+  animation-play-state: paused;
+}
+
+@keyframes envStars {
+  0% {
+    transform: translate(10rem, -50%) scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-10rem, 50%) scale(2);
+    opacity: 0.9;
+  }
+}
+
+@keyframes shipDrop {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-100vh, 100vh) rotate(-40deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-2px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes skyColor {
+  0% {
+    background-color: #312e81;
+  }
+  100% {
+    background-color: #1c1917;
+  }
+}
+
+@keyframes travel {
+  0% {
+    transform: scaleX(-1) rotate(-75deg) scale(1);
+  }
+  10% {
+    transform: scaleX(-1) rotate(-70deg) scale(1);
+  }
+  20% {
+    transform: scaleX(-1) rotate(-65deg) scale(1);
+  }
+  30% {
+    transform: scaleX(-1) rotate(-60deg) scale(1);
+  }
+  40% {
+    transform: scaleX(-1) rotate(-50deg) scale(0.75);
+  }
+  50% {
+    transform: scaleX(-1) rotate(-45deg) scale(0.75);
+  }
+  60% {
+    transform: scaleX(-1) rotate(-40deg) scale(0.75);
+  }
+  70% {
+    transform: scaleX(-1) rotate(-35deg) scale(0.75);
+  }
+  80% {
+    transform: scaleX(-1) rotate(-25deg) scale(0.5);
+  }
+  90% {
+    transform: scaleX(-1) rotate(-20deg) scale(0.5);
+  }
+  100% {
+    transform: scaleX(-1) rotate(-15deg) scale(0.5);
+  }
+}
