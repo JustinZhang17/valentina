@@ -1,1 +1,0 @@
-new kursor({type:4,removeDefaultCursor:!0,color:"rgba(243, 244, 246)"});

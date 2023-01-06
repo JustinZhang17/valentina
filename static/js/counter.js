@@ -70,7 +70,7 @@ const cashout = (bet, bank) => {
     "Cashed out at " +
       parseFloat(document.getElementById("counter").innerHTML) +
       "x.",
-    "Gained " + parseFloat(currBet) * mult + " Space Coins"
+    "Gained " + parseFloat(currBet).toFixed(2) * mult + " Space Coins"
   );
   bank.innerText = (
     parseFloat(bank.innerText) +

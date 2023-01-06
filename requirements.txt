@@ -1,0 +1,9 @@
+Flask==1.1.2
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+itsdangerous==1.1.0
+Werkzeug==1.0.1
+requests==2.27.1
+websockets==10.3
+urllib3==1.25.11
+numpy==1.22.4
