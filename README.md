@@ -14,40 +14,48 @@ This project was created for the purpose of exploring the mathematics behind the
 
 ### In-progress Tasks
 
-- [ ] Crash Description
-- [ ] Crash Blog Article
-- [ ] Crash Complete Equations
-- [ ] Responsive Web Design
-- [ ] Retrain Images of Valentina Tereshkova
-- [ ] Update Readme & Comments
-- [ ] Unit Tests
+- [x] Crash Description
+- [x] Responsive Web Design
+- [x] Retrain Images of Valentina Tereshkova
+- [x] Update Readme & Comments
 - [x] Deploy to Vercel
-
-## Getting Started
-
-Serverless functions
+- [ ] Crash Blog Article
+- [ ] Complete Crash Equations
+- [ ] Unit Tests (Python = unittest)
 
 ### Prerequisites
 
-```
-
-```
+- Nodejs v16.13.0
+- Python 3.10.4
 
 ### Installation
+
+```
+npm install
+pip install -r requirements.txt
+```
 
 <!-- USAGE EXAMPLES -->
 
 ### Usage
+
+```
+npm run dev
+```
+
+### Notes
+
+### [What's the meaning behind the name](https://blog.justinjzhang.com/behind-the-names/)
+
+### [Who is Valentina?](https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/First_woman_in_space_Valentina)
+
+Being deployed on Vercel, the application uses Serverless functions, so it might take a while to load/spin-up initially
 
 <!-- LICENSE -->
 
 ### License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-<!-- ACKNOWLEDGMENTS -->
-
-### Acknowledgments
 
 ### Environment
 

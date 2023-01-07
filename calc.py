@@ -7,6 +7,16 @@ import random
 
 
 def get_result(e=2**52, div=33, g=1):
+    """Returns a valid multiplier based on 3 inputed parameters
+
+    Args:
+        e (int, optional): Extreme Value. Defaults to 2**52.
+        div (int, optional): Initial Crash Rate. Defaults to 33.
+        g (int, optional): Growth Rate. Defaults to 1.
+
+    Returns:
+        Float: A multiplier value based on the crash equation
+    """
     e = int(e)
     h = random.uniform(0, e-1)
     g = checkg(g)
@@ -17,6 +27,16 @@ def get_result(e=2**52, div=33, g=1):
 
 
 def get_CDF_EV(m=2, div=33, g=1):
+    """Returns of expected value and the Cumulative distribution function of the Crash Equation distribution
+
+    Args:
+        m (int, optional): Multiplier. Defaults to 2.
+        div (int, optional): Initial Crash Rate. Defaults to 33.
+        g (int, optional): Growth Rate. Defaults to 1.
+
+    Returns:
+        Dict: contains the growth rate, initial crash rate, CDF, EV, and a sentence stringing these terms together
+    """
     m = checkm(m)
     g = checkg(g)
     div = checkdiv(div)
