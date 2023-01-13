@@ -17,11 +17,11 @@ This project was created for the purpose of exploring the mathematics behind the
 - [x] Crash Description
 - [x] Responsive Web Design
 - [x] Retrain Images of Valentina Tereshkova
-- [x] Update Readme & Comments
 - [x] Deploy to Vercel
-- [ ] Crash Blog Article
+- [x] Crash Blog Article
 - [ ] Complete Crash Equations
 - [ ] Unit Tests (Python = unittest)
+- [x] Acceptance Tests
 
 ### Prerequisites
 
