@@ -18,7 +18,7 @@ def get_result(e=2**52, div=33, g=1):
         Float: A multiplier value based on the crash equation
     """
     e = int(e)
-    h = random.uniform(0, e-1)
+    h = round(random.uniform(0, e-1))
     g = checkg(g)
     div = checkdiv(div)
     if (h % div == 0):
