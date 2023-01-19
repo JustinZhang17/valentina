@@ -78,6 +78,6 @@ def checkm(m):
 
 # Error checking initial fail-rate value (Helper Function)
 def checkdiv(div):
-    if (div <= 1):
+    if (div < 1):
         return 33
     return round(div, 2)
