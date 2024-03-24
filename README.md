@@ -45,7 +45,7 @@ npm run dev
 
 ### Notes
 
-### [What's the meaning behind the name](https://blog.justinjzhang.com/behind-the-names/)
+### [What's the meaning behind the name](https://www.justinjzhang.com/projects/behind-the-names)
 
 ### [Who is Valentina?](https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/First_woman_in_space_Valentina)
 

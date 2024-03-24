@@ -1,525 +1,335 @@
 <!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden bg-gray-900">
-  <head>
-    <title>Valentina - Crash Casino Game</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Valentina - Crash Casino Game" />
-    <meta name="keywords" content="Crash, Casino, Statistics, Justin Zhang" />
-    <meta name="author" content="Justin Zhang" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      href="../static/img/valentina-fav.svg"
-      type="image/svg+xml"
-    />
 
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <link rel="stylesheet" href="../static/css/tailwind.css" />
-    <link rel="stylesheet" href="../static/css/star-anim.css" />
-    <link rel="stylesheet" href="../static/css/valentina-launch.css" />
-    <link rel="stylesheet" href="../static/css/alert-anim.css" />
+<head>
+  <title>Valentina - Crash Casino Game</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Valentina - Crash Casino Game" />
+  <meta name="keywords" content="Crash, Casino, Statistics, Justin Zhang" />
+  <meta name="author" content="Justin Zhang" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="icon" href="../static/img/valentina-fav.svg" type="image/svg+xml" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="overflow-x-hidden relative">
-    <!--Banner Start-->
-    <div class="bg-indigo-900">
-      <div class="mx-auto py-3 px-6 lg:px-60">
-        <div class="flex flex-wrap items- center justify-between">
-          <div class="flex w-0 flex-1 items-center">
-            <span class="flex rounded-lg bg-indigo-700 p-2">
-              <svg
-                class="h-6 w-6 text-indigo-700"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="white"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 001.28.53l4.184-4.183a.39.39 0 01.266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0012 2.25zM8.25 8.625a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm2.625 1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-            <p class="ml-3 truncate font-medium text-gray-100 hidden sm:block">
-              <span class=""
-                >Come see what other projects I've been working on!</span
-              >
-            </p>
-          </div>
-          <div class="order-2 mt-0 w-auto flex-shrink-0 hidden sm:block">
-            <a
-              href="https://linktr.ee/justinjzhang"
-              class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50"
-              >Click Here</a
-            >
-          </div>
-          <div class="order-2 mt-0 w-auto flex-shrink-0 sm:hidden">
-            <a
-              href="https://linktr.ee/justinjzhang"
-              class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50"
-              >Come see my other projects!</a
-            >
-          </div>
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+  <link rel="stylesheet" href="../static/css/tailwind.css" />
+  <link rel="stylesheet" href="../static/css/star-anim.css" />
+  <link rel="stylesheet" href="../static/css/valentina-launch.css" />
+  <link rel="stylesheet" href="../static/css/alert-anim.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="overflow-x-hidden relative">
+  <!--Banner Start-->
+  <div class="bg-indigo-900">
+    <div class="mx-auto py-3 px-6 lg:px-60">
+      <div class="flex flex-wrap items- center justify-between">
+        <div class="flex w-0 flex-1 items-center">
+          <span class="flex rounded-lg bg-indigo-700 p-2">
+            <svg class="h-6 w-6 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 001.28.53l4.184-4.183a.39.39 0 01.266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0012 2.25zM8.25 8.625a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm2.625 1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <p class="ml-3 truncate font-medium text-gray-100 hidden sm:block">
+            <span class="">Come see what other projects I've been working on!</span>
+          </p>
+        </div>
+        <div class="order-2 mt-0 w-auto flex-shrink-0 hidden sm:block">
+          <a href="https://www.justinjzhang.com/"
+            class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50">Click
+            Here</a>
+        </div>
+        <div class="order-2 mt-0 w-auto flex-shrink-0 sm:hidden">
+          <a href="https://www.justinjzhang.com/"
+            class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50">Come
+            see my other projects!</a>
         </div>
       </div>
     </div>
-    <!--Banner End-->
-    <!--Header Start-->
+  </div>
+  <!--Banner End-->
+  <!--Header Start-->
 
-    <header
-      class="h-16 flex items-center border-b border-gray-700 justify-between bg-gray-900 px-6 lg:px-60"
-    >
-      <a href="#" class="flex items-center justify-center">
-        <img src="../static/img/valentina-icon.svg" class="h-16 py-2" />
-        <div
-          class="font-sans text-xl font-bold tracking-wider p-1 text-gray-100 sm:text-3xl"
-        >
-          Valentina
-        </div>
+  <header class="h-16 flex items-center border-b border-gray-700 justify-between bg-gray-900 px-6 lg:px-60">
+    <a href="#" class="flex items-center justify-center">
+      <img src="../static/img/valentina-icon.svg" class="h-16 py-2" />
+      <div class="font-sans text-xl font-bold tracking-wider p-1 text-gray-100 sm:text-3xl">
+        Valentina
+      </div>
+    </a>
+    <span class="flex">
+      <a href="https://www.justinjzhang.com/projects/valentina"
+        class="text-gray-100 hover:bg-gray-100 hover:text-indigo-900 px-2 py-1.5 rounded-lg text-md font-bold flex mr-5"><svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 sm:mr-2"
+          stroke-width="1.5">
+          <path
+            d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
+        </svg>
+        <span class="hidden sm:block"> What is this?</span>
       </a>
-      <span class="flex">
-        <a
-          href="https://blog.justinjzhang.com/valentina"
-          class="text-gray-100 hover:bg-gray-100 hover:text-indigo-900 px-2 py-1.5 rounded-lg text-md font-bold flex mr-5"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6 sm:mr-2"
-            stroke-width="1.5"
-          >
-            <path
-              d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"
-            />
-          </svg>
-          <span class="hidden sm:block"> What is this?</span>
-        </a>
-        <a
-          href="https://github.com/JustinZhang17/valentina"
-          class="text-gray-100 hover:bg-gray-100 hover:text-indigo-900 px-2 py-1.5 rounded-lg text-md font-bold flex"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6 sm:mr-2"
-            stroke-width="1.5"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm3.97.97a.75.75 0 011.06 0l2.25 2.25a.75.75 0 010 1.06l-2.25 2.25a.75.75 0 01-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 010-1.06zm4.28 4.28a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span class="hidden sm:block">Source Code</span>
-        </a>
-      </span>
-    </header>
-
-    <!--Header End-->
-    <!-- Alert Start-->
-    <div
-      class="bg-indigo-100 border border-indigo-400 text-indigo-700 px-4 py-3 rounded fixed -bottom-24 right-6 z-20"
-      id="alert-anim"
-    >
-      <strong class="font-bold"></strong>
-      <span class="block sm:inline"></span>
-    </div>
-    <!-- Alert End-->
-    <div class="flex items-center flex-col px-6 xl:px-60 py-16 bg-gray-900">
-      <div
-        class="h-4/6 w-full 2xl:w-4/6 grid grid-cols-12 grid-rows-6 gap-5 mb-5 relative z-10"
-      >
-        <div
-          class="w-full rounded-md col-span-12 row-span-3 md:col-span-4 md:row-span-4 shadow-black shadow-lg bg-indigo-900"
-        >
-          <!-- Input Interface Start-->
-          <div class="mx-6 mt-6 mb-2">
-            <label class="text-gray-100 text-base font-bold">Bank:</label>
-            <label class="text-gray-100 text-xl font-bold" id="bank-val"
-              >10000.00
-            </label>
-            <label class="text-gray-100 text-sm font-bold">Space coins</label>
-          </div>
-
-          <div class="relative mx-6 mb-6">
-            <label class="text-gray-100 text-sm font-bold">
-              Initial Crash Rate
-            </label>
-            <div
-              class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none"
-            >
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-5 h-5 text-indigo-800"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <input
-              id="init-crash"
-              type="number"
-              step="1"
-              min="-1"
-              oninput="validity.valid||(value='');"
-              value="33"
-              class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
-              placeholder="Enter Value"
-            />
-          </div>
-
-          <div class="relative m-6">
-            <label class="text-gray-100 text-sm font-bold"> Growth Rate </label>
-            <div
-              class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none"
-            >
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-5 h-5 text-indigo-800"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <input
-              id="growth-rate"
-              type="number"
-              step="1"
-              min="-1"
-              value="1"
-              oninput="validity.valid||(value='');"
-              class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
-              placeholder="Enter Value"
-            />
-          </div>
-
-          <div class="relative m-6">
-            <label class="text-gray-100 text-sm font-bold" for="Bet Amount">
-              Bet Amount
-            </label>
-            <div
-              class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none"
-            >
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-5 h-5 text-indigo-800"
-              >
-                <path
-                  d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 01-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004zM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 01-.921.42z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v.816a3.836 3.836 0 00-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 01-.921-.421l-.879-.66a.75.75 0 00-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 001.5 0v-.81a4.124 4.124 0 001.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 00-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 00.933-1.175l-.415-.33a3.836 3.836 0 00-1.719-.755V6z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <input
-              id="bet-amount"
-              type="number"
-              step="0.01"
-              class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
-              placeholder="Enter Betting Amount"
-            />
-          </div>
-          <div class="m-6">
-            <button
-              id="runSimButton"
-              type="button"
-              onclick="runSim()"
-              class="w-full px-6 py-3 bg-gray-900 text-gray-100 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-800 hover:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 transition duration-150 ease-in-out"
-            >
-              Run
-            </button>
-          </div>
-        </div>
-        <!-- Input Interface End-->
-        <!-- Animation Interface Start-->
-        <div
-          class="w-full bg-indigo-900 rounded-md col-span-12 row-span-3 md:col-span-8 md:row-span-4 shadow-black shadow-lg flex items-center justify-center flex-col"
-        >
-          <div
-            id="valentina-anim-env"
-            class="w-11/12 h-2/3 rounded-3xl relative overflow-hidden border-2"
-          >
-            <img
-              src="../static/img/star-night.png"
-              id="valentina-anim-env-stars"
-            />
-            <div class="absolute p-5 left-0 top-0">
-              <div id="valentina-launch">
-                <img
-                  id="valentina-anim-launch"
-                  src="../static/img/valentina-launch.jpg"
-                  alt="astronaut space launch"
-                  class="w-24 h-auto"
-                />
-              </div>
-            </div>
-            <div
-              id="valentina-anim-ship-travel"
-              class="absolute top-0 left-0 right-0 bottom-0 mx-20"
-            >
-              <div id="valentina-anim-ship-drop" class="h-full w-full">
-                <img
-                  id="valentina-anim-ship-shake"
-                  src="../static/img/spaceship-rest.svg"
-                  class="h-full w-full select-none"
-                />
-              </div>
-            </div>
-            <div
-              id="valentina-anim-countdown"
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              style="padding: 100%; background-color: #111827"
-            >
-              <label
-                id="valentina-anim-countdown-text"
-                class="font-sans text-7xl font-bold tracking-wider text-indigo-200 select-none"
-              ></label>
-            </div>
-          </div>
-          <label
-            class="font-sans text-6xl font-bold tracking-wider p-1 text-indigo-200 h-1/6 select-none"
-            id="counter"
-          >
-            1.00×
-          </label>
-        </div>
-        <!-- Animation Interface End-->
-        <!-- Animation Interface Start-->
-        <div
-          class="w-full bg-indigo-900 rounded-md col-span-12 row-span-2 shadow-black shadow-lg flex flex-col items-center justify-evenly p-6"
-        >
-          <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
-            <div class="relative">
-              <label class="text-gray-100 text-sm font-bold"> Multiplier</label>
-              <div
-                class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-5 h-5 text-indigo-800"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <input
-                id="multi-calc"
-                type="number"
-                step="0.01"
-                value="1.99"
-                class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
-                placeholder="Enter Multiplier"
-              />
-            </div>
-            <div class="relative">
-              <label class="text-gray-100 text-sm font-bold"
-                >Initial Crash Rate</label
-              >
-              <div
-                class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-5 h-5 text-indigo-800"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <input
-                id="init-calc"
-                type="number"
-                step="1"
-                min="-1"
-                oninput="validity.valid||(value='');"
-                value="33"
-                class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
-                placeholder="Enter Value"
-              />
-            </div>
-            <div class="relative">
-              <label class="text-gray-100 text-sm font-bold">
-                Growth Rate</label
-              >
-              <div
-                class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-5 h-5 text-indigo-800"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <input
-                id="growth-calc"
-                type="number"
-                step="1"
-                min="-1"
-                value="1"
-                oninput="validity.valid||(value='');"
-                class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
-                placeholder="Enter Value"
-              />
-            </div>
-            <button
-              id="runCalcButton"
-              type="button"
-              onclick="runCalc()"
-              class="px-6 py-3 bg-gray-900 text-gray-100 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-800 hover:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 transition duration-150 ease-in-out"
-            >
-              Calculate
-            </button>
-          </div>
-
-          <label
-            class="text-gray-100 text-sm font-medium hover:font-bold text-center mt-8 sm:mt-0 sm:text-md"
-            id="calc-val"
-          >
-            On a 1 Space Coin bet, if you cash out everytime at ____x. Expect a
-            loss/profit of _______ Space Coin(s)
-          </label>
-          <label
-            class="text-gray-300 text-xs font-light mt-8 sm:mt-0 text-center"
-            id="calc-val-spec"
-          >
-            Multiplier = 1.99, Initial Crash Rate = 3.33%, Growth Rate = 1, CDF
-          </label>
-        </div>
-      </div>
-
-      <div
-        class="bg-indigo-900 p-2 rounded-md my-5 w-full 2xl:w-4/6 relative z-10 shadow-black shadow-lg"
-      >
-        <h1 class="text-gray-200 text-3xl text-center font-bold mt-10">
-          A Study of the Casino Game Crash
-        </h1>
-
-        <div class="mx-6 mb-12">
-          <a
-            href="https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/First_woman_in_space_Valentina"
-          >
-            <img
-              src="../static/img/cover.jpg"
-              class="w-1/2 float-right ml-6 my-3 rounded-md hover:shadow-2xl"
-              alt="Photo of Valentina Tereshkova"
-            />
-          </a>
-          <p class="text-gray-300 text-sm font-bold my-3">
-            Project Valentina was created to explore the statistics behind
-            Crash. Crash is a simple game of chance where a player picks the
-            cashout amount for a betting round as an icon representing a rocket
-            flying through space. The cashout amount climbs until the rocket
-            'crashes' and as long as the player's cashout amount is lower than
-            the crash value, the player can win a payout. (Multiplier * Initial
-            Value)
-          </p>
-
-          <h3 class="text-gray-100 text-xl font-bold">
-            Why it's impossible to win in the long term
-          </h3>
-          <p class="text-gray-300 text-sm font-bold my-3">
-            Crash uses an equation to calculate their given multipliers. And
-            regardless of the cashed out point, the expected value will always
-            be below 0.
-          </p>
-          <h3 class="text-gray-100 text-xl font-bold">
-            What do these variables mean?
-          </h3>
-          <p class="text-gray-300 text-sm font-bold my-3">
-            <b class="text-red-300">Multiplier:</b> Calculate the expected value
-            assuming you always cash out at this multiplier value. <br /><br />
-            <b class="text-red-300">Initial Crash Rate:</b> Chance the game
-            crashes at 1 (ie. if the value is v, then it will crash at 1.0x,
-            (1/v * 100)% of the time). The lower the value, the more likely it
-            is to crash at 1 <br /><br />
-            <b class="text-red-300">Growth Rate:</b> The Pareto index, It can be
-            used to skew the results infavor of the casino, the higher the
-            growth rate, the more likely you are to have lower multipliers (Most
-            casinos use a growth rate of 1, so it doesn't skew the game too much
-            in their favor and break the illusion of a fair game)
-          </p>
-        </div>
-      </div>
-
-      <!-- Star Animation Start -->
-      <div id="stars" class="hidden sm:block"></div>
-      <!-- Star Animation End-->
-    </div>
-  </body>
-  <footer
-    class="p-4 rounded-lg shadow md:flex md:items-center md:justify-between xl:py-6 xl:px-60 bg-indigo-900"
-  >
-    <span class="text-sm text-gray-200 sm:text-center"
-      >Project Valentina - Made by Justin Zhang
+      <a href="https://github.com/JustinZhang17/valentina"
+        class="text-gray-100 hover:bg-gray-100 hover:text-indigo-900 px-2 py-1.5 rounded-lg text-md font-bold flex"><svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 sm:mr-2"
+          stroke-width="1.5">
+          <path fill-rule="evenodd"
+            d="M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm3.97.97a.75.75 0 011.06 0l2.25 2.25a.75.75 0 010 1.06l-2.25 2.25a.75.75 0 01-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 010-1.06zm4.28 4.28a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
+            clip-rule="evenodd" />
+        </svg>
+        <span class="hidden sm:block">Source Code</span>
+      </a>
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-200 sm:mt-0">
-      <li>
-        <a href="https://justinjzhang.com/" class="mr-4 hover:font-bold md:mr-6"
-          >About</a
-        >
-      </li>
-      <li>
-        <a href="https://cal.com/justinzhang" class="hover:font-bold"
-          >Contact</a
-        >
-      </li>
-    </ul>
-  </footer>
-  <!-- External Scripts -->
-  <script src="https://unpkg.com/kursor"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <!-- Internal Scripts -->
-  <script src="../static/js/counter.js" defer></script>
-  <script src="../static/js/calc.js" defer></script>
-  <script src="../static/js/alert.js" defer></script>
-  <script src="../static/js/anim.js"></script>
-  <script src="../static/js/kursor.js"></script>
+  </header>
+
+  <!--Header End-->
+  <!-- Alert Start-->
+  <div class="bg-indigo-100 border border-indigo-400 text-indigo-700 px-4 py-3 rounded fixed -bottom-24 right-6 z-20"
+    id="alert-anim">
+    <strong class="font-bold"></strong>
+    <span class="block sm:inline"></span>
+  </div>
+  <!-- Alert End-->
+  <div class="flex items-center flex-col px-6 xl:px-60 py-16 bg-gray-900">
+    <div class="h-4/6 w-full 2xl:w-4/6 grid grid-cols-12 grid-rows-6 gap-5 mb-5 relative z-10">
+      <div
+        class="w-full rounded-md col-span-12 row-span-3 md:col-span-4 md:row-span-4 shadow-black shadow-lg bg-indigo-900">
+        <!-- Input Interface Start-->
+        <div class="mx-6 mt-6 mb-2">
+          <label class="text-gray-100 text-base font-bold">Bank:</label>
+          <label class="text-gray-100 text-xl font-bold" id="bank-val">10000.00
+          </label>
+          <label class="text-gray-100 text-sm font-bold">Space coins</label>
+        </div>
+
+        <div class="relative mx-6 mb-6">
+          <label class="text-gray-100 text-sm font-bold">
+            Initial Crash Rate
+          </label>
+          <div class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="w-5 h-5 text-indigo-800">
+              <path fill-rule="evenodd"
+                d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <input id="init-crash" type="number" step="1" min="-1" oninput="validity.valid||(value='');" value="33"
+            class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
+            placeholder="Enter Value" />
+        </div>
+
+        <div class="relative m-6">
+          <label class="text-gray-100 text-sm font-bold"> Growth Rate </label>
+          <div class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="w-5 h-5 text-indigo-800">
+              <path fill-rule="evenodd"
+                d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <input id="growth-rate" type="number" step="1" min="-1" value="1" oninput="validity.valid||(value='');"
+            class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
+            placeholder="Enter Value" />
+        </div>
+
+        <div class="relative m-6">
+          <label class="text-gray-100 text-sm font-bold" for="Bet Amount">
+            Bet Amount
+          </label>
+          <div class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="w-5 h-5 text-indigo-800">
+              <path
+                d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 01-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004zM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 01-.921.42z" />
+              <path fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v.816a3.836 3.836 0 00-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 01-.921-.421l-.879-.66a.75.75 0 00-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 001.5 0v-.81a4.124 4.124 0 001.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 00-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 00.933-1.175l-.415-.33a3.836 3.836 0 00-1.719-.755V6z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <input id="bet-amount" type="number" step="0.01"
+            class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
+            placeholder="Enter Betting Amount" />
+        </div>
+        <div class="m-6">
+          <button id="runSimButton" type="button" onclick="runSim()"
+            class="w-full px-6 py-3 bg-gray-900 text-gray-100 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-800 hover:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 transition duration-150 ease-in-out">
+            Run
+          </button>
+        </div>
+      </div>
+      <!-- Input Interface End-->
+      <!-- Animation Interface Start-->
+      <div
+        class="w-full bg-indigo-900 rounded-md col-span-12 row-span-3 md:col-span-8 md:row-span-4 shadow-black shadow-lg flex items-center justify-center flex-col">
+        <div id="valentina-anim-env" class="w-11/12 h-2/3 rounded-3xl relative overflow-hidden border-2">
+          <img src="../static/img/star-night.png" id="valentina-anim-env-stars" />
+          <div class="absolute p-5 left-0 top-0">
+            <div id="valentina-launch">
+              <img id="valentina-anim-launch" src="../static/img/valentina-launch.jpg" alt="astronaut space launch"
+                class="w-24 h-auto" />
+            </div>
+          </div>
+          <div id="valentina-anim-ship-travel" class="absolute top-0 left-0 right-0 bottom-0 mx-20">
+            <div id="valentina-anim-ship-drop" class="h-full w-full">
+              <img id="valentina-anim-ship-shake" src="../static/img/spaceship-rest.svg"
+                class="h-full w-full select-none" />
+            </div>
+          </div>
+          <div id="valentina-anim-countdown" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            style="padding: 100%; background-color: #111827">
+            <label id="valentina-anim-countdown-text"
+              class="font-sans text-7xl font-bold tracking-wider text-indigo-200 select-none"></label>
+          </div>
+        </div>
+        <label class="font-sans text-6xl font-bold tracking-wider p-1 text-indigo-200 h-1/6 select-none" id="counter">
+          1.00×
+        </label>
+      </div>
+      <!-- Animation Interface End-->
+      <!-- Animation Interface Start-->
+      <div
+        class="w-full bg-indigo-900 rounded-md col-span-12 row-span-2 shadow-black shadow-lg flex flex-col items-center justify-evenly p-6">
+        <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
+          <div class="relative">
+            <label class="text-gray-100 text-sm font-bold"> Multiplier</label>
+            <div class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-5 h-5 text-indigo-800">
+                <path fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input id="multi-calc" type="number" step="0.01" value="1.99"
+              class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
+              placeholder="Enter Multiplier" />
+          </div>
+          <div class="relative">
+            <label class="text-gray-100 text-sm font-bold">Initial Crash Rate</label>
+            <div class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-5 h-5 text-indigo-800">
+                <path fill-rule="evenodd"
+                  d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input id="init-calc" type="number" step="1" min="-1" oninput="validity.valid||(value='');" value="33"
+              class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
+              placeholder="Enter Value" />
+          </div>
+          <div class="relative">
+            <label class="text-gray-100 text-sm font-bold">
+              Growth Rate</label>
+            <div class="absolute inset-y-0 top-6 left-0 flex items-center pl-3 pointer-events-none">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-5 h-5 text-indigo-800">
+                <path fill-rule="evenodd"
+                  d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input id="growth-calc" type="number" step="1" min="-1" value="1" oninput="validity.valid||(value='');"
+              class="bg-white border appearance-none border-indigo-600 text-black text-sm rounded-md focus:border-red-500 block w-full pl-10 p-2.5"
+              placeholder="Enter Value" />
+          </div>
+          <button id="runCalcButton" type="button" onclick="runCalc()"
+            class="px-6 py-3 bg-gray-900 text-gray-100 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-800 hover:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 transition duration-150 ease-in-out">
+            Calculate
+          </button>
+        </div>
+
+        <label class="text-gray-100 text-sm font-medium hover:font-bold text-center mt-8 sm:mt-0 sm:text-md"
+          id="calc-val">
+          On a 1 Space Coin bet, if you cash out everytime at ____x. Expect a
+          loss/profit of _______ Space Coin(s)
+        </label>
+        <label class="text-gray-300 text-xs font-light mt-8 sm:mt-0 text-center" id="calc-val-spec">
+          Multiplier = 1.99, Initial Crash Rate = 3.33%, Growth Rate = 1, CDF
+        </label>
+      </div>
+    </div>
+
+    <div class="bg-indigo-900 p-2 rounded-md my-5 w-full 2xl:w-4/6 relative z-10 shadow-black shadow-lg">
+      <h1 class="text-gray-200 text-3xl text-center font-bold mt-10">
+        A Study of the Casino Game Crash
+      </h1>
+
+      <div class="mx-6 mb-12">
+        <a href="https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/First_woman_in_space_Valentina">
+          <img src="../static/img/cover.jpg" class="w-1/2 float-right ml-6 my-3 rounded-md hover:shadow-2xl"
+            alt="Photo of Valentina Tereshkova" />
+        </a>
+        <p class="text-gray-300 text-sm font-bold my-3">
+          Project Valentina was created to explore the statistics behind
+          Crash. Crash is a simple game of chance where a player picks the
+          cashout amount for a betting round as an icon representing a rocket
+          flying through space. The cashout amount climbs until the rocket
+          'crashes' and as long as the player's cashout amount is lower than
+          the crash value, the player can win a payout. (Multiplier * Initial
+          Value)
+        </p>
+
+        <h3 class="text-gray-100 text-xl font-bold">
+          Why it's impossible to win in the long term
+        </h3>
+        <p class="text-gray-300 text-sm font-bold my-3">
+          Crash uses an equation to calculate their given multipliers. And
+          regardless of the cashed out point, the expected value will always
+          be below 0.
+        </p>
+        <h3 class="text-gray-100 text-xl font-bold">
+          What do these variables mean?
+        </h3>
+        <p class="text-gray-300 text-sm font-bold my-3">
+          <b class="text-red-300">Multiplier:</b> Calculate the expected value
+          assuming you always cash out at this multiplier value. <br /><br />
+          <b class="text-red-300">Initial Crash Rate:</b> Chance the game
+          crashes at 1 (ie. if the value is v, then it will crash at 1.0x,
+          (1/v * 100)% of the time). The lower the value, the more likely it
+          is to crash at 1 <br /><br />
+          <b class="text-red-300">Growth Rate:</b> The Pareto index, It can be
+          used to skew the results infavor of the casino, the higher the
+          growth rate, the more likely you are to have lower multipliers (Most
+          casinos use a growth rate of 1, so it doesn't skew the game too much
+          in their favor and break the illusion of a fair game)
+        </p>
+      </div>
+    </div>
+
+    <!-- Star Animation Start -->
+    <div id="stars" class="hidden sm:block"></div>
+    <!-- Star Animation End-->
+  </div>
+</body>
+<footer class="p-4 rounded-lg shadow md:flex md:items-center md:justify-between xl:py-6 xl:px-60 bg-indigo-900">
+  <span class="text-sm text-gray-200 sm:text-center">Project Valentina - Made by Justin Zhang
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-200 sm:mt-0">
+    <li>
+      <a href="https://www.justinjzhang.com/" class="mr-4 hover:font-bold md:mr-6">About</a>
+    </li>
+    <li>
+      <a href="https://cal.com/justinzhang" class="hover:font-bold">Contact</a>
+    </li>
+  </ul>
+</footer>
+<!-- External Scripts -->
+<script src="https://unpkg.com/kursor"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- Internal Scripts -->
+<script src="../static/js/counter.js" defer></script>
+<script src="../static/js/calc.js" defer></script>
+<script src="../static/js/alert.js" defer></script>
+<script src="../static/js/anim.js"></script>
+<script src="../static/js/kursor.js"></script>
+
 </html>
